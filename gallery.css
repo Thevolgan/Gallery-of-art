@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap');
+* body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(12.jpeg);
+    background-size: cover;
+}
+.header{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'KoHo', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #000;
+}
+.title{
+    font-family: 'KoHo', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(37, 182, 192);
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3vw;
+}
+.itens{
+    width: 340px;
+    height: 340px;
+    border: 6px solid #305554;
+    border-radius: 14px;
+    box-shadow: 5px 20px 15px #101718;
+    flex-grow: 1; /*faz com que a ultima imagem ocupe todo o espaço disponivel*/
+    transition: 0.5s ease-in-out; /*faz a animação ir e volta*/
+}
+.itens:hover{
+    transform: scale(1.1);
+    filter: none;
+    transition: transform 0.5s linear;
+}
+.itens img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*ajusta a imagem dentro dos quadrados*/
+}
+.footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(66, 141, 141);
+    text-decoration: none;
+}
+ /*para barra de scr0wling vertival*/
+::-webkit-scrollbar{
+    background: #243C58;
+}
+::-webkit-scrollbar-button{ /*botoes*/
+    background: #243C58;
+}
+::-webkit-scrollbar-thumb{ /*barra de scroll*/
+    background: #486177;
+    border: none;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover{ /*botoes*/
+    background: #0d5fa7;
+}
